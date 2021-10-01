@@ -1,0 +1,29 @@
+<%- include("header") %> 
+
+<div class="box" id="heading">
+  <h1><%= th_title %>
+  </h1>
+</div>
+
+<div class="box">
+  <% for( let index=0; index < th_list.length; index++ ) { %>
+    <div class="item">
+      <input type="checkbox" name="" id="">
+      <p>
+        <%= th_list[index] %>
+      </p>
+    </div>
+  <% } %>
+  <form action="/" method="POST">
+    <input class="input" type="text" name="th_item" autocomplete="off" placeholder="Input your activity">
+    <button class="submit" type="submit" name="button" value=<%= th_title %> >+</button>
+  </form>
+</div>
+<div style="text-align: center;">
+  <a href="/clear-items"><button type="submit" name="button" value=<%= th_title %> >Clear</button></a>
+</div>
+<div class="box-aboutme">
+  <a href="/aboutme">See more about me!</a>
+</div>
+
+<%- include("footer") %> 

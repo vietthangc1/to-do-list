@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show your Date</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="box-back">
+    <% if (th_title == "Work list") { %>
+      <a href="/"><button class="back">Go to Activity list</button></a>
+    <% } else { %>
+      <a href="/work"><button class="back">Go to Work list</button></a>
+    <% } %>
+  </div>
